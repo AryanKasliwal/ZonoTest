@@ -128,23 +128,6 @@ public class OrderManager {
                     }
                 }
             }
-            // int availableGloves = countries.get(purchaseCountry).getGloves();
-            // int availableMasks = countries.get(purchaseCountry).getMask();
-
-            // if (numGloves <= availableGloves) {
-            //     totalPrice += countries.get(purchaseCountry).placeOrder("Gloves", numGloves, passportNum, false);
-            // }
-            // else {
-            //     totalPrice += countries.get(purchaseCountry).placeOrder("Gloves", availableGloves, passportNum, false);
-            //     totalPrice += countries.get(otherCountry).placeOrder("Gloves", numGloves - availableGloves, passportNum, true);
-            // }
-            // if (numMasks <= availableMasks) {
-            //     totalPrice += countries.get(purchaseCountry).placeOrder("Mask", numMasks, passportNum, false);
-            // }
-            // else {
-            //     totalPrice += countries.get(purchaseCountry).placeOrder("Mask", availableMasks, passportNum, false);
-            //     totalPrice += countries.get(otherCountry).placeOrder("Mask", numMasks - availableMasks, passportNum, true);
-            // }
         }
         String result = totalPrice + ":" + countries.get("UK").getMask() + ":" + countries.get("Germany").getMask() + ":" + countries.get("UK").getGloves() + ":" + countries.get("Germany").getGloves();
         countries = resetCountries();
